@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+    <div id="wrap" class="login">
+        <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="video3.mp4" type="video/mp4">
+      </video>
+        <div class="coverTop"></div>
+        <div class="coverBottom"></div>
+        <div id="loading">
+            <h3>ASSA WORLD</h3>
+            <div class="loadingBar ani"></div>
+            <div class="bgBar"></div>
+        </div>
+        </div>
+        <div id="login">
+            <form action="">
+                <input type="text" name="id" id="id" placeholder="아이디(이메일)">
+                <input type="password" name="password" id="password" placeholder="비밀번호">
+            </form>
+            <a href="#" class="loginBtn">로그인</a>
+            <div class="btnBox">
+                <a href="#">아이디 / 비밀번호 찾기</a>
+                |
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(function(){
+            setTimeout(function(){
+                $("#loading .loadingBar").removeClass("ani").stop().animate({"backgroundColor":"#000","width":"100vw"},1000);
+                $("#loading h3").animate({
+                    "top":"-12vh","font-size":"3em"
+                },1000)
+            },3000)
+            setTimeout(function(){
+                $(".coverTop").animate({"top":"-50vh"},1000)
+                $(".coverBottom").animate({"bottom":"-50vh"},1000)
+                $("#loading .loadingBar").hide();
+            },4000)
+            setTimeout(function(){
+                $("#login").animate({"opacity":"1","top":"20vh"},500)},5000)
+        })
+    </script>
+</body>
+</html>
