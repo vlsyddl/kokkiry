@@ -1,0 +1,163 @@
+@charset "utf-8";
+.contents .items .itemsWrap{
+    overflow-y: scroll;
+    padding-right: 10px;
+    height: 100%;
+}
+.contents .items{
+    width: 100%;
+    float: right;
+    box-shadow: 2px 2px #aaa;
+    height: 95%;
+    background: #fff;
+    border-radius: 10px;
+    border: 0.5px solid #999;
+    padding: 10px 20px 10px 30px;
+}
+.contents .items .itemsWrap .StudyTable{
+    
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+    padding-right: 10px;
+    height: 100%;
+}
+  .StudyTable th,
+  td {
+    padding: 15px;
+    background-color:rgba(0, 0, 0, 0.1);
+    color: black;
+    text-align: center;
+  }
+  
+  .StudyTable thead th {
+    background-color: #55608f;
+  }
+  .StudyTable tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .StudyTable tbody td {
+    position: relative;
+  }
+  .StudyTable tbody td:hover:before {
+   
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+  }
+  .searchTextarea{
+    width: 400px;
+  }
+  .searchSelect{
+  margin-left: 100px;
+  
+  }
+ .paging{
+  margin-left: 50%;
+   
+ }
+.writing{
+  width: 100%;
+  height: 100%;
+}
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+  border-color: var(--ck-color-base-border);
+  height: 600px;
+}
+.boardTiele{
+  width: 90%;
+}
+#date-writer-hit {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  color: #555;
+  text-align: right;
+}
+/* 댓글과 댓글을 테두리로 구분 */
+.comments {
+  border-top: 1px solid #ebebeb;
+}
+/* 댓글 작성자 ID */
+.comments > span.writer {
+  display: block;
+  float: left;
+  margin: 3px;
+  padding: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+}
+/* 댓글 작성일 */
+.comments > span.date {
+  display: block;
+  float: left;
+  margin: 3px;
+  padding: 0;
+  font-size: 12px;
+  color: #555;
+}
+/* 댓글 수정|삭제 */
+.comments > span.modify-del {
+  display: block;
+  float: right;
+  margin: 3px;
+  padding: 0;
+  font-size: 12px;
+  color: #555;
+}
+/* 댓글 수정|삭제 링크 */
+.comments a {
+  color: #555;
+  text-decoration: none;
+  font-size: 11px;
+}
+.comments a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+/* 댓글 내용 */
+.comments > p {
+  clear: both;
+  margin: 0;
+  padding: 0 3px 3px 3px;
+  color: #555;
+  font-size: 11px;
+}
+#next-prev {
+  margin: 7px 0;
+  border-top: 1px solid #e1e1e1;
+}
+#next-prev > p {
+  margin: 0;
+  padding: 5px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 12px;
+  color: #333;
+}
+#next-prev > p > a {
+  color: #333;
+  text-decoration: none;
+}
+#next-prev > p > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+#addComment {
+  margin-bottom: 5px;
+  padding: 0.22em;
+  border: 1px solid #eee;
+  background-color: #fafbf7;
+}
+#addComment textarea {
+  width: 99%;
+  padding: 3px;
+  border: 0;
+  color: #555;
+}

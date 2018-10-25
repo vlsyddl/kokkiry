@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/studyReferenceCss.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+    <div id="wrap" class="main">
+        <div class="containerWrap cf">
+            <div class="container">
+                <div class="contentsBody">
+                    <div class="contents">
+                        <div class="count">
+                            TODAY <span class="today">0</span>
+                            TOTAL <span class="total">0</span>
+                        </div>
+                        <div class="title">
+                            <h3>ASSAWORLD</h3>
+                        </div>
+                       
+                        <div class="items">
+                            <div class="itemsWrap">
+                                  
+                                        <table class="bbs-table">
+                                        <tr>
+                                            <th style="width: 47px;text-align: left;vertical-align: top;font-size: 1em;">TITLE</th>
+                                            <th style="text-align: left;color: #555;font-size: 1em;">유용한 폰트 모음집 올려요~</th>
+                                        </tr>
+                                     
+                                        </table>
+                                        <div id="detail">
+                                            <div id="date-writer-hit">2018 10-01 17:50:30 by 이승재 hit 1</div>
+                                            <div id="article-content">
+                                            이쁜 폰트 모음집입니다~ <br />
+                                            이것만 있으면 폰트걱정 없다는거!!<br />
+                                            이쁜 폰트 모음집입니다~ <br />
+                                            이것만 있으면 폰트걱정 없다는거!!<br />
+                                            이쁜 폰트 모음집입니다~ <br />
+                                            이것만 있으면 폰트걱정 없다는거!!<br />
+                                            이쁜 폰트 모음집입니다~ <br />
+                                            이것만 있으면 폰트걱정 없다는거!!<br />
+                                            이쁜 폰트 모음집입니다~ <br />
+                                            이것만 있으면 폰트걱정 없다는거!!<br />
+
+                                           
+                                            </div>
+                                            <div id="file-list" style="text-align: right;">
+                                                <div class="attach-file">
+                                                    <a href="#" title="filename" class="download">유용한폰트모음집.zip</a>
+                                                    <a href="#" title="filekey">삭제</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  댓글 쓰기 -->
+                                        <form id="addCommentForm" style="margin: 10px 0;" action="addComment.jsp" method="post">
+                                            <div id="addComment">
+                                                <textarea id="addComment-ta" name="memo" rows="7" cols="50"></textarea>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <input type="submit" value="댓글 남기기" />
+                                            </div>
+                                        </form>
+                                        <!--  댓글 반복 시작 -->
+                                        <div class="comments">
+                                            <span class="writer">임유신맨</span>
+                                            <span class="date">2018.10.01 22:14:32</span>
+                                            <span class="modify-del">
+                                                <a href="javascript:modifyCommentToggle('5')">수정</a>
+                                                 | <a href="javascript:deleteComment('5')">삭제</a>
+                                            </span>
+                                            <p id="comment5">승재형!! 당신이란사람..!! 이렇게 유용한 파일 줘서 감사요!!</p>
+                                            <form id="modifyCommentForm5" class="comment-form" action="updateComment.jsp" method="post" style="display: none;">
+                                            <input type="hidden" name="commentNo" value="5" />
+                                            <input type="hidden" name="boardCd" value="free" />
+                                            <input type="hidden" name="articleNo" value="12" />
+                                            <input type="hidden" name="curPage" value="1" />
+                                            <input type="hidden" name="searchWord" value="무궁화꽃" />
+                                            <div class="fr">
+                                                    <a href="javascript:document.forms.modifyCommentForm5.submit()">수정하기</a>
+                                                    | <a href="javascript:modifyCommentToggle('5')">취소</a>
+                                            </div>
+                                            <div>
+                                                <textarea class="comment-textarea" name="memo" rows="7" cols="50">유익쓰</textarea>
+                                            </div>
+                                            </form>
+                                        </div>
+                                        <!--  댓글 반복 끝 -->
+                                        <div id="next-prev">
+                                            <p>다음 글 : <a href="#">MVC 수업자료 </a></p>
+                                            <p>이전 글 : <a href="#">Css강의자료@@</a></p>
+                                        </div>
+                                        <div class="view-menu" style="margin-bottom: 47px;">
+                                            <div class="fl">
+                                                <input type="button" value="수정" />
+                                                <input type="button" value="삭제" />
+                                            </div>
+                                            <div class="fr">
+                                                <input type="button" value="다음 글" />
+                                                <input type="button" value="이전 글" />
+                                                <input type="button" value="목록" />
+                                                <input type="button" value="새 글쓰기" />
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                       
+                        <div class="aside">
+                            <ul class="gnb">
+                                <li ><a href="#">홈</a></li>
+                                <li ><a href="#">스터디</a></li>
+                                <li><a href="#">일상</a></li>
+                                <li><a href="#">사진첩</a></li>
+                                <li><a href="#">오늘의 할일</a></li>
+                                <li class="active"><a href="#">자료실</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="jukeBox">
+                <h2>Juke Box</h2>
+                <div class="infoBox">
+                    <h3 class="title">삐삐</h3>
+                    <h5 class="name">아이유</h5>
+                </div>
+                <div class="imgBox">
+                    <img src="img/jukeImg.jpg" alt="" class="img-responsive center-block">
+                </div>
+                <audio id="audio" controls>
+                    <source src="music.mp3" type="audio/mpeg">
+                    </audio>
+                <div class="btnBox">
+                    <a href="#" class="prev"><i class="fas fa-backward"></i></a>
+                    <a href="#" class="play" ><i class="fas fa-play"></i></a>
+                    <a href="#" class="pause"><i class="fas fa-pause"></i></a>
+                    <a href="#" class="next" ><i class="fas fa-forward"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+          $(".play").click(function(){
+              $("#audio")[0].play();
+              $("#audio").addClass("on")
+              $(".play").hide();
+              $(".pause").show();
+          })
+          $(".pause").click(function(){
+              $("#audio")[0].pause();
+              $("#audio").removeClass("on")
+              $(".pause").hide();
+              $(".play").show();
+          })
+    </script>
+</body>
+</html>
