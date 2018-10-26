@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <title>회원가입</title>
+    <style>
+        table, span, h3, button, th, tr, td, label {
+            font-size: 16px;
+        }
+        h3, .logoname, button {
+            font-size: 22px;
+        }
+        #wrap.main {
+            width: 100%;
+            height: 100vh;
+            background: url(main-bg2.jpg) no-repeat bottom right/cover;
+        }
+        .containerWrap {
+            width: 100%;
+            max-width: 1170px;
+            margin: auto;
+            padding-top: 100px;
+        }
+        .container {
+            width: 56%;
+            border: 1px solid #617075;
+            border-radius: 10px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: #E1F9F7;
+        }
+        .logo {
+            margin-top: 3%;
+        }
+        .logoname {
+            color: #CB5E58;
+        }
+        .logoname, .signup {
+            margin-left: 6%;
+        }
+        h3 {
+            color: #CB5E58;
+        }
+        hr {
+            width: 90%;
+            border-color: #CB5E58;
+        }
+        .maintab {
+            width: 80%;
+            margin: 20px auto;
+        }
+        input[type='text'], input[type='password'] {
+            width: 60%;
+            height: 20px;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
+        input[type='text'].emailtext {
+            width: 27.5%;
+            margin: 0% 0%;
+        }
+        .maintab > div {
+            margin: 2%;
+        }
+        input, select {
+            margin: 3%
+        }
+        span {
+            display: inline-block;
+            margin: 0px 0px;
+        }
+        .update {
+            position: absolute;
+            right: 42%;
+            width: 3%;
+            margin-top: 1%;
+            background-color: #CB5E58;
+        }
+        hr.header {
+           margin-top: 1%;
+        }
+        .passtip {
+            padding-left: 2%; 
+            font-size: 15px;
+            color: #357cb5;
+        }
+        th {
+            text-align: right;
+            padding-right: 2%;
+        }
+        .tdemail { 
+            padding-left: 2.2%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="main">
+        <div class="containerWrap cf">
+            <div class="container">
+                <div class="logo">
+                    <span class="logoname">ASSAWORLD</span>
+                    <h3 class="signup">마이페이지</h3>
+                </div>
+                <hr class="header">
+                <form>
+                    <table class="maintab">
+                        <tr>
+                            <th class="email">이메일</th>
+                            <td class="tdemail">
+                                <input class="emailtext" type="text">
+                                <span>@</span>
+                                <input class="emailtext" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="pass">비밀번호</th>
+                            <td><input class="passtext" type="password"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td class="passtip">안전한 비밀번호를 위해 6자 이상, 문자 + 숫자를 섞어주세요!</td>
+                        </tr>
+                        <tr>
+                            <th class="checkpass">비밀번호 확인</th>
+                            <td><input class="checkpasstext" type="password"></td>
+                        </tr>
+                        <tr>
+                            <th>이름</th>
+                            <td><input class="nametext" type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>휴대폰</th>
+                            <td><input class="phonetext" type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>성별</th>
+                            <td>
+                                <input id="gender1" type="radio" name="gender" value="m">
+                                <label for="gender1">남자</label>
+                                <input id="gender2" type="radio" name="gender" value="w">
+                                <label for="gender2">여자</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>생년월일</th>
+                            <td>
+                                <select name="birthYear">
+                                    <option value=""></option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                </select>년
+                                <select name="birthMonth">
+                                    <option value=""></option>
+                                    <option value="02">02</option>
+                                    <option value="06">06</option>
+                                    <option value="08">08</option>
+                                </select>월
+                                <select name="birthDay">
+                                    <option value=""></option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                </select>일
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="button" class="update" onclick="" >수정</button>
+                </form>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
